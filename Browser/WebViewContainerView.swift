@@ -10,20 +10,21 @@ import SwiftUI
 
 struct WebViewContainerView: View {
 	@State var url: URL
+	@State var webViewHeight: CGFloat = 0
 
 	var body: some View {
 		GeometryReader { reader in
-			ScrollView {
+			ScrollView(.vertical) {
 				HStack {
 					Image(systemName: "photo")
 					Text(self.url.absoluteString)
 				}.padding(.top)
-
-				WebView(urlRequest: URLRequest(url: self.url))
+				WebView(urlRequest: URLRequest(url: self.url), contentHeight: self.$webViewHeight)
+					.frame(width: reader.size.width, height: max(reader.size.height, self.webViewHeight))
 					.edgesIgnoringSafeArea(.bottom)
-					.frame(width: reader.size.width, height: reader.size.height)
-			}.navigationBarTitle(Text(self.url.absoluteString), displayMode: .inline)
-		}
+			}
+		}.navigationBarTitle(Text(self.url.absoluteString), displayMode: .inline)
+
 	}
 }
 
