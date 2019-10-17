@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		91545FFD23586EE000E3CDCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91545FFC23586EE000E3CDCA /* AppDelegate.swift */; };
 		91545FFF23586EE000E3CDCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91545FFE23586EE000E3CDCA /* SceneDelegate.swift */; };
-		9154600123586EE000E3CDCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9154600023586EE000E3CDCA /* ContentView.swift */; };
+		9154600123586EE000E3CDCA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9154600023586EE000E3CDCA /* MainView.swift */; };
 		9154600323586EE200E3CDCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9154600223586EE200E3CDCA /* Assets.xcassets */; };
 		9154600623586EE200E3CDCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9154600523586EE200E3CDCA /* Preview Assets.xcassets */; };
 		9154600923586EE200E3CDCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9154600723586EE200E3CDCA /* LaunchScreen.storyboard */; };
+		9154601123586F0F00E3CDCA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9154601023586F0F00E3CDCA /* WebView.swift */; };
+		91546013235871D500E3CDCA /* WebViewContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91546012235871D500E3CDCA /* WebViewContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91545FF923586EE000E3CDCA /* Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91545FFC23586EE000E3CDCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91545FFE23586EE000E3CDCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9154600023586EE000E3CDCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9154600023586EE000E3CDCA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9154600223586EE200E3CDCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9154600523586EE200E3CDCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9154600823586EE200E3CDCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9154600A23586EE200E3CDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9154601023586F0F00E3CDCA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		91546012235871D500E3CDCA /* WebViewContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				91545FFC23586EE000E3CDCA /* AppDelegate.swift */,
 				91545FFE23586EE000E3CDCA /* SceneDelegate.swift */,
-				9154600023586EE000E3CDCA /* ContentView.swift */,
+				9154600023586EE000E3CDCA /* MainView.swift */,
+				91546012235871D500E3CDCA /* WebViewContainerView.swift */,
+				9154601023586F0F00E3CDCA /* WebView.swift */,
 				9154600223586EE200E3CDCA /* Assets.xcassets */,
 				9154600723586EE200E3CDCA /* LaunchScreen.storyboard */,
 				9154600A23586EE200E3CDCA /* Info.plist */,
@@ -147,8 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				91545FFD23586EE000E3CDCA /* AppDelegate.swift in Sources */,
+				91546013235871D500E3CDCA /* WebViewContainerView.swift in Sources */,
+				9154601123586F0F00E3CDCA /* WebView.swift in Sources */,
 				91545FFF23586EE000E3CDCA /* SceneDelegate.swift in Sources */,
-				9154600123586EE000E3CDCA /* ContentView.swift in Sources */,
+				9154600123586EE000E3CDCA /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
